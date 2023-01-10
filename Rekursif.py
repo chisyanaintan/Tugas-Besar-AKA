@@ -6,4 +6,10 @@ def jumlah(n: int) -> int:
 
 
 n = int(input("Masukkan nilai n : "))
+
+import datetime
+start = datetime.datetime.now()
 print("Hasil penjumlahan dari 1 hingga",n, "adalah", jumlah(n))
+end = datetime.datetime.now()
+waktu = end - start
+print("Execution Time = ", waktu.microseconds, "microseconds")
